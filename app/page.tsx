@@ -12,7 +12,7 @@ export default async function Home() {
   const jobs = await prisma.jobs.findMany({
     where: {
       date: {
-        gte: new Date(new Date().setDate(new Date().getDate() - 1)),
+        gte: new Date(new Date().setDate(new Date().getDate() - 2)),
       },
     },
   });
