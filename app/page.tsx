@@ -17,8 +17,10 @@ export default async function Home() {
     },
   });
   return (
-    <div className="flex flex-col gap-4 max-w-4xl m-auto">
-      <h1>Remote Jobs Finder 🔍</h1>
+    <div className="flex flex-col gap-4 max-w-4xl m-auto p-4">
+      <h1 className="text-5xl font-bold text-center mb-4">
+        Remote Jobs Finder 🔍
+      </h1>
       <ul className="flex flex-col gap-2">
         {jobs.map((job) => (
           <li key={job.id}>
